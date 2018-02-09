@@ -44,3 +44,4 @@ Assets/Plugins.meta
 Assets/Plugins/Editor/JetBrains.meta
 .idea/.idea.MeshModifiers/.idea/contentModel.xml
 .idea/.idea.MeshModifiers/.idea/workspace.xml
+*.lock

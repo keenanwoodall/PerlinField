@@ -10,10 +10,7 @@ public class PerlinField : MonoBehaviour
 		magnitude = 1f,
 		speed = 1f;
 	public Vector2 offset;
-	public bool 
-		// Changing the color of the material is a terrible idea and runs very slowly.
-		changeColor,
-		roundHeight;
+	public bool roundHeight;
 
 	[SerializeField]
 	private Transform prefab;
@@ -56,12 +53,6 @@ public class PerlinField : MonoBehaviour
 					newPosition.y = (int)newPosition.y;
 
 				instance.position = newPosition;
-
-				if (changeColor)
-				{
-					var materialInstance = materialInstances[x, y];
-					materialInstance.color = Color.Lerp (Color.black, Color.white, perlinValue);
-				}
 			}
 		}
 	}
